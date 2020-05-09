@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.container {
+    padding: 16px;
+}
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries reference */
+
+@media (min-width: 640px) { 
+    body {
+        background-color: darkblue;
+    }
+    img {
+        width: 75%;
+    }
+
+    .container {
+        width: 500px;
+        margin: auto;
+        background-color: white;
+    }
+ }
