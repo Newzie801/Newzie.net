@@ -40,3 +40,14 @@ Github markdown cheat sheet.
 </div>
 ```
 
+
+## CSS
+* padding is perfect, margins are evil
+
+
+## JavaScript
+* var:  Variables.  Named containers that may hold a value.
+
+* Breakpoints: Areas where code will pause, used for better examination of state of program paused at that point.
+
+* click detection:  element.addEventListener

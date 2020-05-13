@@ -1,7 +1,14 @@
+* {
+    margin: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+}
+p, h1 {
+    padding: 8px 0;
 }
 img {
     width: 100%;
@@ -10,6 +17,20 @@ img {
 }
 .container {
     padding: 16px;
+}
+
+#goat_game {
+    border-width: 4px;
+    border-color: #39c;
+    border-style: solid;
+    padding: 16px;
+    background-color: #ccc;
+}
+#goat_game button {
+    padding: 8px;
+    display: block;
+    width: 50%;
+    margin: auto;
 }
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries reference */
 
