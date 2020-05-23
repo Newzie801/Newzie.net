@@ -32,9 +32,25 @@ img {
     width: 50%;
     margin: auto;
 }
+
+#ghoul_e {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width:  128px;
+    height: 128px;
+}
+#ghoul_e:hover .socket {
+    fill: #fa0000;
+    stroke: orange;
+}
+#ghoul_e:hover .bone {
+    stroke: orange;
+}
+
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries reference */
 
-@media (min-width: 640px) { 
+@media (min-width: 640px) {
     body {
         background-color: darkblue;
     }
