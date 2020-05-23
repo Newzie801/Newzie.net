@@ -41,11 +41,11 @@ img {
     height: 128px;
 }
 #ghoul_e:hover .socket {
-    fill: #fa0000;
-    stroke: orange;
+    fill: hsl(0, 100%, 49%);
+    stroke: rgb(104, 0, 104);
 }
 #ghoul_e:hover .bone {
-    stroke: orange;
+    stroke: rgb(104, 0, 104);
 }
 
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries reference */
