@@ -30,34 +30,25 @@ setInterval(
     1000
 );
 
+var goatCost = 5;
+var goatCount = 0;
+var moneyPerGoatPerSecond = 1;
 var goatHeadline = document.createElement('h2');
+var goatDescription = document.createElement('p');
+var goatDescription2 = document.createElement('p');
+var goatCountDisplay = document.createElement('p');
+money = goatCost; // So that you'll always have enough money to hire your first goat
 goatHeadline.innerText = 'Goats';
 gameContainer.appendChild(goatHeadline);
-var goatDescription = document.createElement('p');
-var moneyPerGoatPerSecond = 1;
-goatDescription.innerText = (
-    'Goats are great! Your goats automatically generate money for you.'
-    + ' Each goat gives you '
-    + moneyPerGoatPerSecond
-    + ' money per second.'
-);
-
-var goatCost = 11;
-money = goatCost; // So that you'll always have enough money to hire your first goat
-var goatDescription2 = document.createElement('p')
-goatDescription2.innerText = (
-    'Each goat will cost '
-    + goatCost
-    + ' money. Click the hire a goat button below to start generating money.'
-);
-
 gameContainer.appendChild(goatDescription);
-gameContainer.appendChild(goatDescription2)
-var goatCountDisplay = document.createElement('p');
+gameContainer.appendChild(goatDescription2);
 gameContainer.appendChild(goatCountDisplay);
-var goatCount = 0;
 
 var updateGoatView = function () {
+    var hireNextGoatMessage = 'Click the hire a goat button below to start generating money.';
+    if (goatCount > 1) {
+        hireNextGoatMessage = 'Click the button again to hire more goats and generate more money.';
+    }
     goatDescription.innerText = (
         'Goats are great! Your goats automatically generate money for you.'
         + ' Each goat gives you '
@@ -67,8 +58,15 @@ var updateGoatView = function () {
         + (goatCount * moneyPerGoatPerSecond)
         + ' money per second'
     );
+    goatDescription2.innerText = (
+        'Hiring a goat will cost '
+        + goatCost
+        + ' money. '
+        + hireNextGoatMessage
+    );
     goatCountDisplay.innerText = 'goat count: ' + goatCount;
 };
+updateGoatView();
 var addGoatButton = document.createElement('button');
 addGoatButton.innerText = 'hire a goat';
 gameContainer.appendChild(addGoatButton);
@@ -76,6 +74,7 @@ var addGoat = function () {
     if (money >= goatCost) {
         goatCount += 1;
         money -= goatCost;
+        goatCost += 1;
         updateGoatView();
     } else {
         alert(
