@@ -8,7 +8,7 @@ var moneyDisplay = document.createElement('h2');
 gameContainer.appendChild(moneyDisplay)
 var moneyDescription = document.createElement('p');
 gameContainer.appendChild(moneyDescription)
-var money = 10;
+var money = 0;
 var updateMoneyView = function () {
     var moneyMadeThisSecond = (
         0
@@ -42,9 +42,13 @@ goatDescription.innerText = (
     + ' money per second.'
 );
 
+var goatCost = 11;
+money = goatCost; // So that you'll always have enough money to hire your first goat
 var goatDescription2 = document.createElement('p')
 goatDescription2.innerText = (
-    'Each goat will cost 10 money.  Click the hire a goat button below to start generating money.'
+    'Each goat will cost '
+    + goatCost
+    + ' money. Click the hire a goat button below to start generating money.'
 );
 
 gameContainer.appendChild(goatDescription);
@@ -52,7 +56,7 @@ gameContainer.appendChild(goatDescription2)
 var goatCountDisplay = document.createElement('p');
 gameContainer.appendChild(goatCountDisplay);
 var goatCount = 0;
-var goatCost = 10;
+
 var updateGoatView = function () {
     goatDescription.innerText = (
         'Goats are great! Your goats automatically generate money for you.'
