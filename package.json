@@ -1,0 +1,20 @@
+{
+  "name": "newzie.net",
+  "version": "1.0.0",
+  "description": "Newzie's website on the interwebs",
+  "main": "index.html",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Newzie801/Newzie.net.git"
+  },
+  "author": "Newzie <thburnahm@protonmail.com>",
+  "license": "MIT",
+  "homepage": "https://newzie.net/",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-es5": "^1.5.0"
+  }
+}

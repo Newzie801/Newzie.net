@@ -1,0 +1,14 @@
+{
+    "env": {
+        "browser": true,
+        "es6": false
+    },
+    "plugins": [
+        "es5"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:es5/no-es2015",
+        "plugin:es5/no-es2016"
+    ]
+}
