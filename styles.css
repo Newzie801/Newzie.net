@@ -54,6 +54,9 @@ img {
 #ghoul_e:hover .bone {
     stroke: rgb(104, 0, 104);
 }
+#ghoul_e:hover #jaw {
+    transform: translate(0, 20px);
+}
 
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries reference */
 
