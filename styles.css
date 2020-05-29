@@ -33,10 +33,17 @@ img {
     margin: auto;
 }
 
-#ghoul_e {
+#ghoul_e_frame {
     position: fixed;
     bottom: 0;
     right: 0;
+    width:  128px;
+    height: 128px;
+}
+#ghoul_e_page {
+    overflow: hidden;
+}
+#ghoul_e {
     width:  128px;
     height: 128px;
 }
